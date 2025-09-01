@@ -1,151 +1,133 @@
-.heading{
-    color: white;
-    background: rgb(3, 3, 52);
-    margin: 0vh 0vh 12vh 0vh;
-    text-align: center;
-    font: 0.5rem;
-    font-display: block;
-    height: 70px;
-    width: 100%;
+/* General Body Styles */
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.Start{
-    align-items: center;
-    margin: 20vh 0vh 10vh 58vh;
-    height: 20vh;
-    width: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-#Paper{
-    margin: 0vh 5vh;
-    height: 20vh;
-    width: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    border-radius: 50%;
-    background: #EAC4D5;
-    border: none;
-    cursor: pointer;
-}
-#Rock{
-    margin: 0vh 5vh;
-    height: 20vh;
-    width: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    border-radius: 50%;
-    background: #809BCE;
-    border: none;
-    cursor: pointer;
-}
-#Scissor{
-    margin: 0vh 5vh;
-    height: 20vh;
-    width: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    border-radius: 50%;
-    background: #EEE0CB;
-    border: none;
-    cursor: pointer;
-}
-.msg-Container{
-    height: 20vh;
-    width: auto;
-    
-}
-.msg1{
-    background: Black;
-    color: white;
-    height: 8vh;
-    width: 50vh;
-    align-items: center;
-    border-radius: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 80vh;
-    margin-top: 40px;
-}
-.msg2{
-    background: rgb(77, 77, 6);
-    color: white;
-    height: 8vh;
-    width: 50vh;
-    align-items: center;
-    border-radius: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 80vh;
-    margin-top: 40px;
-}
-.msg3{
-    background: green;
-    color: white;
-    height: 8vh;
-    width: 50vh;
-    align-items: center;
-    border-radius: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 80vh;
-    margin-top: 40px;
-}
-.msg4{
-    background: red;
-    color: white;
-    height: 8vh;
-    width: 50vh;
-    align-items: center;
-    border-radius: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 80vh;
-    margin-top: 40px;
-}
-.hide1{
-    display: none;
 
+/* Heading */
+.heading {
+  color: white;
+  background: rgb(3, 3, 52);
+  margin-bottom: 8vh;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hide2{
-    display: none;
+
+/* Choice Buttons Container */
+.Start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5vh auto 10vh;
 }
-.hide3{
-    display: none;
+
+/* Individual Choice Buttons */
+#Paper, #Rock, #Scissor {
+  height: 15vh;
+  width: 15vh;
+  margin: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.hide4{
-    display: none;
+
+#Paper { background: #EAC4D5; }
+#Rock { background: #809BCE; }
+#Scissor { background: #EEE0CB; }
+
+/* Score Display Container */
+.Turn {
+  display: flex;
+  justify-content: space-around; /* Spreads out the elements evenly */
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 3vh;
 }
-.Turn{
-    display: flex;
-    font-size: 2rem;
+
+/* Player and Computer Score Containers */
+.You, .Computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.Y{
-    padding-right: 8vh;
-    margin-left: 92vh;
-    margin-bottom: 3vh;
+
+.You { color: #212529; }
+.Computer { color: #212529; }
+
+.Y, .C {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
-.C{
-    padding-left: 12vh;
-    margin-bottom: 3vh;
+
+/* Message Buttons */
+.msg-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.You{
-    padding-right: 8vh;
-    margin-left: 90vh;
+
+.msg1, .msg2, .msg3, .msg4 {
+  color: white;
+  height: 8vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vh;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.Computer{
-    color: black;
+
+.msg1 { background: black; }
+.msg2 { background: #809BCE; } /* Changed to a softer color */
+.msg3 { background: green; }
+.msg4 { background: red; }
+
+/* Hide Classes */
+.hide1, .hide2, .hide3, .hide4 {
+  display: none;
 }
-.reset{
-    height: 5vh;
-    width: 15vh;
-    font-size: 1rem;
-    color: white;
-    background: black;
-    border: none;
-    cursor: pointer;
-    margin-left: 100vh;
-    border-radius: 0.8vh;
+
+/* Reset Button */
+.reset {
+  height: 5vh;
+  width: 15vh;
+  font-size: 1rem;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.8vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 3vh;
+}
+
+/* Image inside buttons */
+#Paper img, #Rock img, #Scissor img {
+    height: 60%;
+    width: 60%;
 }
