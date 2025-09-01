@@ -1,0 +1,151 @@
+.heading{
+    color: white;
+    background: rgb(3, 3, 52);
+    margin: 0vh 0vh 12vh 0vh;
+    text-align: center;
+    font: 0.5rem;
+    font-display: block;
+    height: 70px;
+    width: 100%;
+}
+.Start{
+    align-items: center;
+    margin: 20vh 0vh 10vh 58vh;
+    height: 20vh;
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Paper{
+    margin: 0vh 5vh;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    border-radius: 50%;
+    background: #EAC4D5;
+    border: none;
+    cursor: pointer;
+}
+#Rock{
+    margin: 0vh 5vh;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    border-radius: 50%;
+    background: #809BCE;
+    border: none;
+    cursor: pointer;
+}
+#Scissor{
+    margin: 0vh 5vh;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    border-radius: 50%;
+    background: #EEE0CB;
+    border: none;
+    cursor: pointer;
+}
+.msg-Container{
+    height: 20vh;
+    width: auto;
+    
+}
+.msg1{
+    background: Black;
+    color: white;
+    height: 8vh;
+    width: 50vh;
+    align-items: center;
+    border-radius: 1vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 80vh;
+    margin-top: 40px;
+}
+.msg2{
+    background: rgb(77, 77, 6);
+    color: white;
+    height: 8vh;
+    width: 50vh;
+    align-items: center;
+    border-radius: 1vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 80vh;
+    margin-top: 40px;
+}
+.msg3{
+    background: green;
+    color: white;
+    height: 8vh;
+    width: 50vh;
+    align-items: center;
+    border-radius: 1vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 80vh;
+    margin-top: 40px;
+}
+.msg4{
+    background: red;
+    color: white;
+    height: 8vh;
+    width: 50vh;
+    align-items: center;
+    border-radius: 1vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 80vh;
+    margin-top: 40px;
+}
+.hide1{
+    display: none;
+
+}
+.hide2{
+    display: none;
+}
+.hide3{
+    display: none;
+}
+.hide4{
+    display: none;
+}
+.Turn{
+    display: flex;
+    font-size: 2rem;
+}
+.Y{
+    padding-right: 8vh;
+    margin-left: 92vh;
+    margin-bottom: 3vh;
+}
+.C{
+    padding-left: 12vh;
+    margin-bottom: 3vh;
+}
+.You{
+    padding-right: 8vh;
+    margin-left: 90vh;
+}
+.Computer{
+    color: black;
+}
+.reset{
+    height: 5vh;
+    width: 15vh;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    border: none;
+    cursor: pointer;
+    margin-left: 100vh;
+    border-radius: 0.8vh;
+}
