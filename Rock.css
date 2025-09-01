@@ -1,115 +1,106 @@
 /* Heading styles */
 .heading {
-    color: white;
-    background: rgb(3, 3, 52);
-    margin: 0vh 0vh 12vh 0vh;
-    text-align: center;
-    font-size: 2rem;
-    height: 70px;
-    width: 100%;
+color: white;
+background: rgb(3, 3, 52);
+margin: 0 0 12vh 0;
+text-align: center;
+font: 0.5rem;
+font-display: block;
+height: 70px;
+width: 100%;
 }
 
-/* Button container styles */
+/* Start (Buttons) container styles */
 .Start {
-    /* Buttons ko center karne ke liye flexbox ka istemal */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    /* Margin ko theek karke center mein lana */
-    margin: 5vh auto 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+margin: 5vh auto 10vh;
 }
 
 /* Individual button styles */
 #Paper, #Rock, #Scissor {
-    /* Size ko chota aur responsive banana */
-    height: 15vh;
-    width: 15vh;
-    /* Buttons ke beech ki duri kam karna */
-    margin: 1.5vh;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    /* Image ke andar text ko center karna */
+height: 15vh;
+width: 15vh;
+margin: 1.5vh;
+display: flex;
+border-radius: 50%;
+background: #EAC4D5;
+border: none;
+cursor: pointer;
+justify-content: center;
+align-items: center;
 }
 
-#Paper { background: #EAC4D5; }
 #Rock { background: #809BCE; }
 #Scissor { background: #EEE0CB; }
 
 .msg-Container {
-    height: 20vh;
-    width: auto;
+height: 20vh;
+width: auto;
 }
 
 /* Message button styles */
 .msg1, .msg2, .msg3, .msg4 {
-    color: white;
-    height: 8vh;
-    /* Phone par fit hone ke liye width percentage mein karna */
-    width: 80%;
-    /* Button ko center mein laane ke liye auto margin */
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-align: center;
+background: black;
+color: white;
+height: 8vh;
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1vh;
+font-size: 1.5rem;
+cursor: pointer;
+margin: 20px auto;
+text-align: center;
 }
 
-.msg1 { background: Black; }
 .msg2 { background: rgb(77, 77, 6); }
 .msg3 { background: green; }
 .msg4 { background: red; }
 
 .hide1, .hide2, .hide3, .hide4 {
-    display: none;
+display: none;
 }
 
 /* Score display container */
 .Turn {
-    /* Scores ko side-by-side aur evenly spaced rakhne ke liye */
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 2rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+font-size: 2rem;
 }
 
-/* Individual score elements */
 .Y, .C {
-    /* Extra margin ko hatakar flexbox par chhod dena */
-    margin: 0;
-    padding: 0;
-    font-size: 3rem;
+font-size: 3rem;
+font-weight: bold;
+margin: 0;
+padding: 0;
 }
 
-.You {
-    /* Extra margin ko hatakar flexbox par chhod dena */
-    margin: 0;
+.You, .Computer {
+margin: 0;
 }
 
 .Computer {
-    color: black;
+color: black;
 }
 
 /* Reset button styles */
 .reset {
-    height: 5vh;
-    width: 15vh;
-    font-size: 1rem;
-    color: white;
-    background: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 0.8vh;
-    /* Button ko center mein laane ke liye auto margin aur display block */
-    margin: 0 auto;
-    display: block;
+height: 5vh;
+width: 15vh;
+font-size: 1rem;
+color: white;
+background: black;
+border: none;
+cursor: pointer;
+margin: 0 auto;
+display: block;
+border-radius: 0.8vh;
+margin-top: 3vh;
 }
